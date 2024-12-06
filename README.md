@@ -18,6 +18,9 @@
 ---
 - **git merge [branch name]**: 合併分支到當前的分支(需要先checkout到要合併進去的那個分支) <br />
 - **git push -u [remote name] [branch name]**: 將本地新增的分支上傳到遠端
+- **git fetch [remote name] [branch name]**: 更新本地的遠端分支參考（如 origin/main），但本地分支（如 main）保持不變
+- **git rebase [remote name] [branch name]**: 將一個分支的更改「重新定位」到另一個分支的基礎上
+- **git pull**: 將遠端倉庫的更新拉取到本地並直接合併，等同於執行 git fetch + git merge。
 
 ## Github操作 <br />
 - **git remote add origin https://...** : 連接本地和遠端的儲存庫 <br />

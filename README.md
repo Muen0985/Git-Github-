@@ -8,7 +8,8 @@
 - **git log / git log --online**: 查看commit紀錄 / 簡化版 <br />
 - **git reset -- [file name]**: 取消已經add的檔案 <br />
 - **git checkout [commit id] -- [file name]**: 還原檔案先前的版本 (需要add 跟 commit，代表不會刪除原先紀錄) (還原或提取單個文件的歷史) <br />
-- **git reset --hard [commit id]**: 還原到過去版本(不可逆的版本還原) (改變分支歷史) <br />
+- **git reset --soft [commit id] or head~1**: 還原到過去版本 (先前新增的紀錄仍會保留) <br />
+- **git reset --hard [commit id] or head~1**: 還原到過去版本 (直接回到上一個版本，之前新增的部分不會保留) <br />
 - **git commit -- amend –m “[messages]”**: 修改最後一次commit紀錄 <br />
 - **新增.gitignore 檔案**: 避免無關的檔案混入 <br />
 ---
